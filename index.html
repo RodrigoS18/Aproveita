@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aproveita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container py-2 border-bottom bg">
+        <nav class="d-flex align-items-center gap-1">
+            <a href="#" class="d-flex align-items-center flex-shrink-0">
+            <img 
+            src="/img/aproveita_logo_folha.png" 
+            alt="Logo" 
+            width="23"
+            height="28">
+            </a>
+            
+            <a href="#" class="navbar-brand text-bordo fw-bold m-0">Aproveita</a>  <!--colocar o hover verde-->
+            <div class="d-flex gap-3 ms-1">
+            <form>
+            <input 
+            type="search" 
+            class="form-control rounded-pill bg-busca" 
+            placeholder="Buscar alimentos..."    
+            > 
+            </form>
+
+        <button 
+            class="navbar-toggler hamburger-menu flex-shrink-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+        >
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    </nav>
+
+    <div class="collapse mt-1" id="menuPrincipal">
+      <ul class="navbar-nav py-1">
+        <li class="nav-item">
+          <a class="nav-link py-1" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-1" href="#">Como funciona</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-1" href="#">Explorar</a>
+        </li>
+      </ul>
+    </div>
+    </header>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
