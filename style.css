@@ -12,11 +12,11 @@
 }
 
 .bg {
-    background-color: #fcf9f6;
+    background-color: #f7f2ef;
 }
 
 .bg-busca {
-    background-color: #f6f1ea;
+    background-color: #f7f4ef;
     padding-bottom: 3px;
     padding-top: 3px;
 }
@@ -35,4 +35,26 @@
 #menuPrincipal .nav-link:hover {
     background-color: #F7F1E7;
     color: #842F3A;
+}
+
+.form-control {
+    border-radius: 14px 0 0 14px;
+}
+
+.input-group .btn {
+    border-radius: 0 14px 14px 0;
+    background-color: #842F3A;
+    color: white;
+    border: none;
+}
+
+.busca-85 {
+    width: 85%;
+}
+
+.hero-img{
+    width: 70%;
+    max-width: 650px;
+    height: auto;
+    right: -5%;
 }
