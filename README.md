@@ -36,7 +36,7 @@ Este projeto foi construído focando em performance, boas práticas de código e
 ## 🌐 Acesso ao Projeto
 
 Para testar a aplicação diretamente no seu navegador:  
-🔗 **[https://RodrigoS18.github.io/aproveita/](https://RodrigoS18.github.io/aproveita/)**
+🔗 **[https://rodrigos18.github.io/Aproveita/](https://rodrigos18.github.io/Aproveita/)**
 
 ---
 
