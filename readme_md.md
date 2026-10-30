@@ -8,7 +8,7 @@
 
 O **Aproveita** nasceu do propósito de unir sustentabilidade e economia local. A plataforma permite aos utilizadores encontrar refeições e alimentos de alta qualidade que seriam desperdiçados pelos estabelecimentos ao final do dia, oferecendo-os com descontos imperdíveis.
 
-Vale ressaltar que este é um projeto desenvolvido exclusivamente com a finalidade de praticar e aperfeiçoar competências de desenvolvimento front-end (com abordagem *mobile-first*), não possuindo fins comerciais.
+Vale ressaltar que este é um projeto no inicio do desenvolvimento e é exclusivamente com a finalidade de praticar e aperfeiçoar competências de desenvolvimento front-end (com abordagem *mobile-first*), não possuindo fins comerciais.
 
 ---
 
