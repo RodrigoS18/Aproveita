@@ -94,3 +94,68 @@
 .bg-main {
     background-color: rgba(241, 232, 232, 0.8);
 }
+
+/* =========================================
+   AJUSTES CIRÚRGICOS PARA PC (Desktop)
+   ========================================= */
+
+/* Tamanho base dos cards (mantém a sua essência mobile) */
+.card-oferta {
+    width: 120px; 
+}
+
+/* Regras ativadas APENAS em telas médias/grandes (PC e Tablets horizontais) */
+@media (min-width: 768px) {
+    
+    /* 1. Cresce os cards e as imagens das ofertas */
+    .card-oferta {
+        width: 220px;
+    }
+    .card-oferta img {
+        height: 160px !important;
+    }
+
+    /* 2. Ajusta o prato de comida para não cobrir o texto no monitor */
+    .hero-img {
+        width: 45%;
+        right: 0;
+        top: -10px;
+    }
+
+    /* 3. Dá um respiro e arredonda a Hero Section no PC (Fica mais elegante) */
+    .hero {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+        border-radius: 16px;
+        margin-top: 1rem;
+    }
+    
+    /* 4. Aumenta a fonte do título principal */
+    .hero h1 {
+        font-size: 2.5rem !important;
+    }
+    /* 5. Aumenta a barra de pesquisa na Hero Section */
+    .busca-85 {
+        width: 60%;
+    }
+    .busca-85 .form-control {
+        padding: 0.8rem 1.5rem; /* Deixa a barra mais alta e confortável */
+        font-size: 1.1rem;
+    }
+    .busca-85 .btn {
+        padding: 0 1.5rem;
+    }
+
+    /* 6. Aumenta as letras dentro dos cards maiores */
+    .card-oferta .fs-carrossel {
+        font-size: 1.1rem;
+    }
+    .card-oferta .fs-7 {
+        font-size: 0.9rem;
+    }
+    
+    .secao-carrossel {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
