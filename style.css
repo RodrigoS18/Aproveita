@@ -53,8 +53,44 @@
 }
 
 .hero-img{
-    width: 70%;
+    width: 60%;
     max-width: 650px;
     height: auto;
     right: -5%;
+}
+
+.text-verde-apoio {
+    color: #68BF6E;
+}
+
+.bg-border-bordo {
+    background-color: #f7d5d9;
+}
+.border-bordo {
+    border-color: #f7d5d9 !important;
+}
+
+.bg-border-verde-apoio {
+    background-color: #d8f0da;
+}
+.border-verde-apoio {
+    border-color: #d8f0da !important;
+}
+/* Badge de Desconto e Cor Verde do Preço */
+.bg-bordo-carrossel {
+    background-color: #842F3A !important;
+}
+
+.text-verde-preco {
+    color: #2E7D32 !important;
+}
+.fs-carrossel {
+    font-size: 0.900rem;
+}
+.fs-7 {
+    font-size: 0.75rem;
+}
+
+.bg-main {
+    background-color: rgba(241, 232, 232, 0.8);
 }
