@@ -46,7 +46,7 @@ Se quiser clonar e testar o projeto no seu computador, siga os passos abaixo:
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/aproveita.git
+   git clone https://github.com/RodrigoS18/aproveita.git
    ```
 
 2. Navegue até a pasta do projeto:
