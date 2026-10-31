@@ -6,13 +6,19 @@
 
     mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
 }
-
+.ms-m {
+    margin-left: 1.3rem !important;
+}
 .text-bordo {
     color: #662424;
 }
 
 .bg {
     background-color: #f7f2ef;
+}
+
+.bg-2 {
+    background-color: #f7f7f7;
 }
 
 .bg-busca {
@@ -23,6 +29,11 @@
 
 #menuPrincipal {
     border-color: #E5E5E5 !important;
+}
+
+.header-img {
+    width: 22px; 
+    height: 25px;
 }
 
 #menuPrincipal .nav-link {
@@ -48,8 +59,8 @@
     border: none;
 }
 
-.busca-85 {
-    width: 85%;
+.busca-90 {
+    width: 90%;
 }
 
 .hero-img{
@@ -62,7 +73,12 @@
 .text-verde-apoio {
     color: #68BF6E;
 }
-
+.bg-border-bordo-escuro {
+    background-color: #842F3A;
+}
+.border-bordo-escuro {
+    border-color: #842F3A !important;
+}
 .bg-border-bordo {
     background-color: #f7d5d9;
 }
@@ -88,11 +104,19 @@
     font-size: 0.900rem;
 }
 .fs-7 {
+    font-size: 0.875rem
+}
+
+.fs-8 {
     font-size: 0.75rem;
 }
 
 .bg-main {
     background-color: rgba(241, 232, 232, 0.8);
+}
+
+.bg-bordo-claro {
+    background-color:rgba(236, 222, 222, 0.8);
 }
 
 /* =========================================
@@ -101,12 +125,37 @@
 
 /* Tamanho base dos cards (mantém a sua essência mobile) */
 .card-oferta {
-    width: 120px; 
+    width: 135px; 
 }
 
 /* Regras ativadas APENAS em telas médias/grandes (PC e Tablets horizontais) */
 @media (min-width: 768px) {
     
+    .header-pc {
+        padding: 1.2rem 0 !important;
+    }
+
+    .header-nav {
+        padding-left: 18rem;
+        gap: 4rem !important;
+    }
+    
+    .header-gap {
+        gap: 1rem !important;
+    }
+
+    .header-text-color-on {
+    color: #842F3A !important;
+}
+
+    .header-pc a {
+        font-size: 1rem !important;
+    }
+
+    .header-pc img {
+        width: 30px;
+        height: 30px;
+    }
     /* 1. Cresce os cards e as imagens das ofertas */
     .card-oferta {
         width: 220px;
@@ -117,45 +166,84 @@
 
     /* 2. Ajusta o prato de comida para não cobrir o texto no monitor */
     .hero-img {
-        width: 45%;
-        right: 0;
+        width: 35%;
+        right: 40px;
         top: -10px;
     }
 
     /* 3. Dá um respiro e arredonda a Hero Section no PC (Fica mais elegante) */
     .hero {
-        padding-top: 4rem !important;
-        padding-bottom: 4rem !important;
-        border-radius: 16px;
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+        border-radius: 20px;
         margin-top: 1rem;
+        
     }
     
     /* 4. Aumenta a fonte do título principal */
     .hero h1 {
-        font-size: 2.5rem !important;
+        font-size: 3.0rem !important;
+        padding-bottom: 1.5rem !important;
+        
+    }
+
+    .hero p {
+        font-size: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+        color: #4B4B4B;
     }
     /* 5. Aumenta a barra de pesquisa na Hero Section */
-    .busca-85 {
-        width: 60%;
+    .busca-90 {
+        width: 115%;
+        padding-bottom: 1.5rem !important;
     }
-    .busca-85 .form-control {
-        padding: 0.8rem 1.5rem; /* Deixa a barra mais alta e confortável */
+    .busca-90 .form-control {
+        padding: 1rem 1.7rem; /* Deixa a barra mais alta e confortável */
         font-size: 1.1rem;
     }
-    .busca-85 .btn {
-        padding: 0 1.5rem;
+    .busca-90 .btn {
+        padding: 0 1.6rem;
+    }
+
+    .div-icon {
+        gap: 12px !important;
+    }
+    .borda-icon {
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+
+    .icon {
+        font-size: 1.3rem !important;
+    }
+
+    .text-icon {
+        font-size: 1.0rem !important;
+    }
+
+    .py-md-6 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1rem !important;
     }
 
     /* 6. Aumenta as letras dentro dos cards maiores */
     .card-oferta .fs-carrossel {
         font-size: 1.1rem;
     }
-    .card-oferta .fs-7 {
-        font-size: 0.9rem;
+    
+    /* 7. Centraliza a fileira de cards em vez de empurrá-la pra esquerda
+       (antes usava margin fixa de 10rem, o que deixava um vão enorme
+       à direita quando a tela era mais larga que os cards somados) */
+    .secao-carrossel {
+        max-width: 1400px;
+        margin-left: 9rem;
+        margin-right: auto;
+    
     }
     
-    .secao-carrossel {
-        margin-left: 10rem;
-        margin-right: 10rem;
-    }
+}
+
+
+.pb-botao {
+    padding-bottom: 2px;
 }
