@@ -6,6 +6,33 @@
 
     mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
 }
+
+/* Barra de rolagem VERTICAL da página inteira: mais fina
+   e nas cores da marca (trilho claro + "polegar" bordô) */
+html {
+    scrollbar-width: thin;                 /* Firefox: deixa fina */
+    scrollbar-color: #842F3A #f7f2ef;      /* Firefox: polegar / trilho */
+}
+ 
+::-webkit-scrollbar {
+    width: 10px;                   /* Chrome, Safari, Edge: largura da barra */
+}
+::-webkit-scrollbar-track {
+    background: #f7f2ef;           /* trilho, mesma cor do .bg da página */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #842F3A;     /* polegar, mesmo bordô dos botões */
+    border-radius: 10px;
+    border: 2px solid #f7f2ef;     /* "respiro" ao redor do polegar */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #662424;     /* bordô mais escuro no hover, igual .text-bordo */
+}
+
+.pb-botao {
+    padding-bottom: 2px;
+}
+
 .ms-m {
     margin-left: 1.3rem !important;
 }
@@ -58,16 +85,28 @@
     color: white;
     border: none;
 }
+/* Remove a sombra azul padrão do Bootstrap ao focar o campo
+   e o botão de busca (input-group), e troca a borda azulada
+   do foco pela cor da marca */
+.busca-90 .form-control:focus,
+.busca-90 .btn:focus {
+    box-shadow: none;
+    border-color: #842F3A;
+}
 
 .busca-90 {
     width: 90%;
 }
 
 .hero-img{
-    width: 60%;
+    width: 55%;
     max-width: 650px;
     height: auto;
     right: -5%;
+}
+
+.gap-icon {
+    gap: 5px;
 }
 
 .text-verde-apoio {
@@ -119,6 +158,62 @@
     background-color:rgba(236, 222, 222, 0.8);
 }
 
+/* Esconde a barra de rolagem do carrossel de ofertas,
+   mas mantém o scroll horizontal funcionando normalmente */
+.secao-carrossel {
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* Edge/IE antigos */
+}
+.secao-carrossel::-webkit-scrollbar {
+    display: none;              /* Chrome, Safari, Edge novo */
+}
+
+
+/* =========================================
+   LISTA SUSPENSA (DROPDOWN) DA BUSCA
+   ========================================= */
+ 
+.lista-sugestoes {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    z-index: 20;
+    max-height: 280px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #f0e4e4;
+    border-radius: 14px;
+    margin: 0;
+    padding: 6px 0;
+}
+
+
+.resultado-busca-item {
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+ 
+.resultado-busca-item:hover,
+.resultado-busca-item:focus {
+    background-color: #f7f2ef;
+    outline: none;
+}
+ 
+.resultado-busca-img {
+    width: 40px;
+    height: 40px;
+}
+ 
+/* Destaque temporário no card do carrossel quando a pessoa
+   escolhe um item na lista suspensa */
+.card-destacado {
+    outline: 2px solid #842F3A;
+    outline-offset: 2px;
+    transition: outline-color 0.3s ease;
+}
+
+
 /* =========================================
    AJUSTES CIRÚRGICOS PARA PC (Desktop)
    ========================================= */
@@ -166,7 +261,7 @@
 
     /* 2. Ajusta o prato de comida para não cobrir o texto no monitor */
     .hero-img {
-        width: 35%;
+        width: 38%;
         right: 40px;
         top: -10px;
     }
@@ -188,7 +283,7 @@
     }
 
     .hero p {
-        font-size: 1.5rem !important;
+        font-size: 1.7rem !important;
         padding-bottom: 1.5rem !important;
         color: #4B4B4B;
     }
@@ -226,6 +321,10 @@
         padding-bottom: 1rem !important;
     }
 
+    .lista-sugestoes {
+        top: 80%;
+    }
+
     /* 6. Aumenta as letras dentro dos cards maiores */
     .card-oferta .fs-carrossel {
         font-size: 1.1rem;
@@ -241,9 +340,4 @@
     
     }
     
-}
-
-
-.pb-botao {
-    padding-bottom: 2px;
 }
